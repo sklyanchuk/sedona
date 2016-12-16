@@ -5,16 +5,18 @@
   <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
     <nav class="menu container" role="navigation">
-      <a class="menu__item" href="/">Информация</a>
-      <a class="menu__item" href="/">Фото и видео</a>
+      <a class="menu__item" href="#">Информация</a>
+      <a class="menu__item" href="#">Фото и видео</a>
       <a class="menu__item"><img src="" alt="Логотип" class="logo"></a>
-      <a class="menu__item" href="/">Карта штата</a>
-      <a class="menu__item" href="/">Гостиницы</a>
+      <a class="menu__item" href="#">Карта штата</a>
+      <a class="menu__item" href="#">Гостиницы</a>
     </nav>
   </header>
 
+  <!-- Intro block -->
   <div class="intro">
     <div class="container">
       <p class="intro__pretitle">Welcome
@@ -25,6 +27,7 @@
     </div>
   </div>
 
+  <!-- Content block -->
   <main class="content">
     <div class="container">
 
@@ -96,5 +99,55 @@
       </section>
     </div>
   </main>
+
+  <!-- Search block -->
+  <div class="search-block">
+    <div class="container">
+      <div class="search-block__header">
+        <p class="search-block__title">Заинтересовались?</p>
+        <p class="search-block__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </div>
+      <img src="" alt="Карта Седоны" class="search-block__map">
+      <form action="/" class="search-form">
+        <div class="search-form__header">Поиск гостиницы в Седоне</div>
+        <div class="search-form__inputs">
+          <label for="arrival_date">Дата заезда
+            <input type="date" name="arrival_date" id="arrival_date">
+          </label>
+          <br>
+          <label for="departure_date">Дата выезда
+            <input type="date" name="departure_date" id="departure_date">
+          </label>
+          <br>
+          <label for="adults">Взрослые
+            <button>-</button>
+            <input type="number" name="adults" id="adults" value="2">
+            <button>+</button>
+          </label>
+          <label for="kids">
+            <button>-</button>
+            <input type="number" name="kids" id="kids" value="0">
+            <button>+</button>
+          </label>
+        </div>
+        <input type="submit" name="search-button" class="search-form__button" value="Найти">
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__tag">#visitsedona</div>
+      <div class="footer__social">
+        <a class="social__link social__link-twitter"></a>
+        <a class="social__link social__link-facebook"></a>
+        <a class="social__link social__link-youtube"></a>
+      </div>
+      <div class="footer__copyright">
+        Website by <img src="" alt=""> for <img src="" alt="">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

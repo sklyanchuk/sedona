@@ -11,33 +11,115 @@
       <nav class="menu" role="navigation">
         <a class="menu__link" href="#">Информация</a>
         <a class="menu__link" href="#">Фото и видео</a>
-        <a class="menu__link"><img src="" alt="Логотип" class="logo"></a>
+        <a class="menu__link" href="index.html"><img src="" alt="Логотип" class="logo"></a>
         <a class="menu__link" href="#">Карта штата</a>
-        <a class="menu__link" href="#">Гостиницы</a>
+        <a class="menu__link menu__link--current" href="hotels.html">Гостиницы</a>
       </nav>
     </div>
   </header>
 
-  <!-- Search hotels block -->
-  <main class="hotels">
+  <!-- Sort hotels block -->
+  <main class="hotels" role="main">
     <div class="container">
-
-      <form class="search">
-
+      <form action="/" class="sort-form">
+          <section class="sort-block">
+            <h3 class="sort-block__title">Инфраструктура</h3>
+            <input type="checkbox" class="sort-block__checkbox" id="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" class="sort-block__checkbox" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" class="sort-block__checkbox" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
+          </section>
+          <section class="sort-block">
+            <h3 class="sort-block__title">Тип жилья:</h3>
+            <input type="checkbox" class="sort-block__checkbox" id="type-hotel" checked>
+            <label for="type-hotel">Гостиница</label>
+            <input type="checkbox" class="sort-block__checkbox" id="type-motel" checked>
+            <label for="type-motel">Мотель</label>
+            <input type="checkbox" class="sort-block__checkbox" id="type-apartment" checked>
+            <label for="type-apartment">Апартаменты</label>
+          </section>
+          <section class="price">
+            <h3 class="price__title">Стоимость в сутки (Р):</h3>
+            <div class="price__range">
+              <p class="price__from">От 0</p>
+              <p class="price__to">до 3000</p>
+            </div>
+            <div class="slider">
+              <div class="slider__block"></div>
+              <div class="slider__slider slider__slider--active"></div>
+            </div>
+          </section>
       </form>
 
       <div class="results">
-        <div class="results__header">
-
+        <div class="filter">
+          <p class="filter__title">Найдено: 3</p>
+          <div class="filter__sorting">
+            <p>Сортировка:</p>
+            <a href="#" class="filter__toggle">По цене</a>
+            <a href="#" class="filter__toggle">По типу</a>
+            <a href="#" class="filter__toggle">По рейтингу</a>
+          </div>
+          <div class="filter__latches">
+            <img src="" alt="Сортировать по возрастанию" class="filter__latch">
+            <img src="" alt="Сортировать по убыванию" class="filter__latch">
+          </div>
         </div>
         <article class="hotel">
-
+          <img src="" alt="Фотография гостиницы Amara Resort & SPA" class="hotel__img">
+          <section class="hotel__description">
+            <div class="hotel__about">
+              <h2 class="hotel__title">Amara Resort & SPA</h2>
+              <p class="hotel__type">Гостиница</p>
+              <p class="hotel__price">От 3500 р.</p>
+              <a href="#" class="btn btn-size-info hotel__infolink">Подробнее</a>
+              <a href="#" class="btn btn-type-book hotel__book">Забронировать</a>
+            </div>
+          </section>
+          <section class="hotel__rating">
+            <img src="" alt="Первая звезда рейтинга" class="hotel__star">
+            <img src="" alt="Вторая звезда рейтинга" class="hotel__star">
+            <img src="" alt="Третья звезда рейтинга" class="hotel__star">
+            <img src="" alt="Четвертая звезда рейтинга" class="hotel__star">
+            <p class="hotel__figure">Рейтинг: 8,5</p>
+          </section>
         </article>
         <article class="hotel">
-
+          <img src="" alt="Фотография мотеля Desert Quail Inn" class="hotel__img">
+          <section class="hotel__description">
+            <div class="hotel__about">
+              <h2 class="hotel__title">Desert Quail Inn</h2>
+              <p class="hotel__type">Мотель</p>
+              <p class="hotel__price">От 2000 р.</p>
+              <a href="#" class="btn btn-size-info hotel__infolink">Подробнее</a>
+              <a href="#" class="btn btn-type-book hotel__book">Забронировать</a>
+            </div>
+          </section>
+          <section class="hotel__rating">
+            <img src="" alt="Первая звезда рейтинга" class="hotel__star">
+            <img src="" alt="Вторая звезда рейтинга" class="hotel__star">
+            <p class="hotel__figure">Рейтинг: 8,9</p>
+          </section>
         </article>
         <article class="hotel">
-          
+          <img src="" alt="Фотография апартаментов Villas At Poco Diablo" class="hotel__img">
+          <section class="hotel__description">
+            <div class="hotel__about">
+              <h2 class="hotel__title">Villas At Poco Diablo</h2>
+              <p class="hotel__type">Апартаменты</p>
+              <p class="hotel__price">От 4000 р.</p>
+              <a href="#" class="btn btn-size-info hotel__infolink">Подробнее</a>
+              <a href="#" class="btn btn-type-book hotel__book">Забронировать</a>
+            </div>
+          </section>
+          <section class="hotel__rating">
+            <img src="" alt="Первая звезда рейтинга" class="hotel__star">
+            <img src="" alt="Вторая звезда рейтинга" class="hotel__star">
+            <img src="" alt="Третья звезда рейтинга" class="hotel__star">
+            <p class="hotel__figure">Рейтинг: 9,2</p>
+          </section>
         </article>
       </div>
     </div>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
 </head>
 <body>
@@ -11,18 +12,18 @@
       <nav class="menu" role="navigation">
         <a class="menu__link" href="#">Информация</a>
         <a class="menu__link" href="#">Фото и видео</a>
-        <a class="menu__link"><img src="" alt="Логотип" class="logo"></a>
+        <a class="menu__link menu__link--current" href="index.html"><img src="" alt="Логотип" class="logo"></a>
         <a class="menu__link" href="#">Карта штата</a>
-        <a class="menu__link" href="#">Гостиницы</a>
+        <a class="menu__link" href="hotels.html">Гостиницы</a>
       </nav>
     </div>
   </header>
 
   <!-- Intro block -->
-  <div class="intro">
+  <div class="intro" role="banner">
     <div class="container">
       <p class="intro__pretitle">Welcome
-        <span class="pretitle__subline">to the gorgeous</span>
+        <span class="intro__subline">to the gorgeous</span>
       </p>
       <h1 class="intro__title">Sedona</h1>
       <p class="intro__subtitle">&ldquo;Because the Grand Canyon sucks!&bdquo;</p>
@@ -30,7 +31,7 @@
   </div>
 
   <!-- Content block -->
-  <main class="content">
+  <main class="content" role="main">
     <div class="container">
 
       <section class="content__description">
@@ -132,7 +133,7 @@
             <button>+</button>
           </label>
         </div>
-        <input type="submit" name="btn btn-type-search" class="search-form__button" value="Найти">
+        <input type="submit" name="btn btn-size-search" class="search-form__button" value="Найти">
       </form>
     </div>
   </div>
@@ -142,9 +143,9 @@
     <div class="container">
       <div class="footer__tag">#visitsedona</div>
       <div class="footer__social">
-        <a class="btn btn-type-social btn-type-social--twitter"></a>
-        <a class="btn btn-type-social btn-type-social--facebook"></a>
-        <a class="btn btn-type-social btn-type-social--youtube"></a>
+        <a class="btn btn-size-social btn-size-social--twitter"></a>
+        <a class="btn btn-size-social btn-size-social--facebook"></a>
+        <a class="btn btn-size-social btn-size-social--youtube"></a>
       </div>
       <div class="footer__copyright">
         Website by <img src="" alt=""> for <img src="" alt="">

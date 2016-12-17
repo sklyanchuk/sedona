@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Ceдона — небольшой городок в Аризоне, заслуживающий большего!</title>
+  <!-- Links -->
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
   <!-- Header -->
@@ -11,7 +15,7 @@
       <nav class="menu" role="navigation">
         <a class="menu__link" href="#">Информация</a>
         <a class="menu__link" href="#">Фото и видео</a>
-        <a class="menu__link" href="index.html"><img src="" alt="Логотип" class="logo"></a>
+        <a class="menu__link" href="index.html"><img src="" alt="Логотип" class="logo" width="67" height="56"></a>
         <a class="menu__link" href="#">Карта штата</a>
         <a class="menu__link menu__link--current" href="hotels.html">Гостиницы</a>
       </nav>
@@ -25,7 +29,7 @@
           <section class="sort-block">
             <h3 class="sort-block__title">Инфраструктура</h3>
             <input type="checkbox" class="sort-block__checkbox" id="pool" checked>
-            <label for="pool">Бассейн</label>
+            <label for="pool" class="sort-block__label">Бассейн</label>
             <input type="checkbox" class="sort-block__checkbox" id="parking">
             <label for="parking">Парковка</label>
             <input type="checkbox" class="sort-block__checkbox" id="wi-fi">
@@ -48,6 +52,7 @@
             </div>
             <div class="slider">
               <div class="slider__block"></div>
+              <div class="slider__slider"></div>
               <div class="slider__slider slider__slider--active"></div>
             </div>
           </section>
@@ -67,8 +72,9 @@
             <img src="" alt="Сортировать по убыванию" class="filter__latch">
           </div>
         </div>
+
         <article class="hotel">
-          <img src="" alt="Фотография гостиницы Amara Resort & SPA" class="hotel__img">
+          <img src="img/hotels-amara.jpg" alt="Фотография гостиницы Amara Resort & SPA" class="hotel__img" width="135" height="90">
           <section class="hotel__description">
             <div class="hotel__about">
               <h2 class="hotel__title">Amara Resort & SPA</h2>
@@ -79,15 +85,15 @@
             </div>
           </section>
           <section class="hotel__rating">
-            <img src="" alt="Первая звезда рейтинга" class="hotel__star">
-            <img src="" alt="Вторая звезда рейтинга" class="hotel__star">
-            <img src="" alt="Третья звезда рейтинга" class="hotel__star">
-            <img src="" alt="Четвертая звезда рейтинга" class="hotel__star">
+            <i class="hotel__star sprite"></i>
+            <i class="hotel__star sprite"></i>
+            <i class="hotel__star sprite"></i>
+            <i class="hotel__star sprite"></i>
             <p class="hotel__figure">Рейтинг: 8,5</p>
           </section>
         </article>
         <article class="hotel">
-          <img src="" alt="Фотография мотеля Desert Quail Inn" class="hotel__img">
+          <img src="img/hotels-desert.jpg" alt="Фотография мотеля Desert Quail Inn" class="hotel__img" width="135" height="90">
           <section class="hotel__description">
             <div class="hotel__about">
               <h2 class="hotel__title">Desert Quail Inn</h2>
@@ -98,13 +104,13 @@
             </div>
           </section>
           <section class="hotel__rating">
-            <img src="" alt="Первая звезда рейтинга" class="hotel__star">
-            <img src="" alt="Вторая звезда рейтинга" class="hotel__star">
+            <i class="hotel__star sprite"></i>
+            <i class="hotel__star sprite"></i>
             <p class="hotel__figure">Рейтинг: 8,9</p>
           </section>
         </article>
         <article class="hotel">
-          <img src="" alt="Фотография апартаментов Villas At Poco Diablo" class="hotel__img">
+          <img src="img/hotels-villas.jpg" alt="Фотография апартаментов Villas At Poco Diablo" class="hotel__img" width="135" height="90">
           <section class="hotel__description">
             <div class="hotel__about">
               <h2 class="hotel__title">Villas At Poco Diablo</h2>
@@ -115,9 +121,9 @@
             </div>
           </section>
           <section class="hotel__rating">
-            <img src="" alt="Первая звезда рейтинга" class="hotel__star">
-            <img src="" alt="Вторая звезда рейтинга" class="hotel__star">
-            <img src="" alt="Третья звезда рейтинга" class="hotel__star">
+            <i class="hotel__star sprite"></i>
+            <i class="hotel__star sprite"></i>
+            <i class="hotel__star sprite"></i>
             <p class="hotel__figure">Рейтинг: 9,2</p>
           </section>
         </article>
@@ -135,7 +141,10 @@
         <a class="btn btn-type-social btn-type-social--youtube"></a>
       </div>
       <div class="footer__copyright">
-        Website by <img src="" alt=""> for <img src="" alt="">
+        Website by
+        <i class="sprite"></i>
+        for
+        <i class="sprite"></i>
       </div>
     </div>
   </footer>

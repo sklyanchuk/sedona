@@ -1,0 +1,99 @@
+.stitches-sprite (@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite {
+  background-image: url(../../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+
+  &.sprite-ico-calendar {
+    .stitches-sprite(-5px, -5px, 20px, 22px);
+  }
+
+  &.sprite-ico-calendar-down {
+    .stitches-sprite(-35px, -5px, 20px, 22px);
+  }
+
+  &.sprite-ico-calendar-hover {
+    .stitches-sprite(-65px, -5px, 20px, 22px);
+  }
+
+  &.sprite-ico-checkbox {
+    .stitches-sprite(-95px, -5px, 20px, 20px);
+  }
+
+  &.sprite-ico-checkbox-active {
+    .stitches-sprite(-125px, -5px, 20px, 20px);
+  }
+
+  &.sprite-ico-checkbox-active-down {
+    .stitches-sprite(-155px, -5px, 20px, 20px);
+  }
+
+  &.sprite-ico-checkbox-active-hover {
+    .stitches-sprite(-95px, -35px, 20px, 20px);
+  }
+
+  &.sprite-ico-checkbox-down {
+    .stitches-sprite(-125px, -35px, 20px, 20px);
+  }
+
+  &.sprite-ico-checkbox-hover {
+    .stitches-sprite(-155px, -35px, 20px, 20px);
+  }
+
+  &.sprite-ico-ft-box {
+    .stitches-sprite(-5px, -65px, 64px, 76px);
+  }
+
+  &.sprite-ico-ft-burger {
+    .stitches-sprite(-79px, -65px, 74px, 70px);
+  }
+
+  &.sprite-ico-ft-house {
+    .stitches-sprite(-185px, -5px, 75px, 72px);
+  }
+
+  &.sprite-ico-logo-a {
+    .stitches-sprite(-163px, -87px, 27px, 30px);
+  }
+
+  &.sprite-ico-logo-a-down {
+    .stitches-sprite(-200px, -87px, 27px, 30px);
+  }
+
+  &.sprite-ico-logo-a-hover {
+    .stitches-sprite(-237px, -87px, 27px, 30px);
+  }
+
+  &.sprite-ico-logo-academy {
+    .stitches-sprite(-163px, -127px, 27px, 33px);
+  }
+
+  &.sprite-ico-logo-academy-down {
+    .stitches-sprite(-200px, -127px, 27px, 33px);
+  }
+
+  &.sprite-ico-logo-academy-hover {
+    .stitches-sprite(-237px, -127px, 27px, 33px);
+  }
+
+  &.sprite-ico-social-twitter {
+    .stitches-sprite(-5px, -170px, 19px, 15px);
+  }
+
+  &.sprite-ico-social-youtube {
+    .stitches-sprite(-34px, -170px, 20px, 14px);
+  }
+
+  &.sprite-ico-soical-fb {
+    .stitches-sprite(-270px, -5px, 9px, 19px);
+  }
+
+  &.sprite-ico-star {
+    .stitches-sprite(-64px, -170px, 18px, 17px);
+  }
+}

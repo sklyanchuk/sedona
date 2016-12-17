@@ -7,13 +7,15 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <nav class="menu container" role="navigation">
-      <a class="menu__item" href="#">Информация</a>
-      <a class="menu__item" href="#">Фото и видео</a>
-      <a class="menu__item"><img src="" alt="Логотип" class="logo"></a>
-      <a class="menu__item" href="#">Карта штата</a>
-      <a class="menu__item" href="#">Гостиницы</a>
-    </nav>
+    <div class="container">
+      <nav class="menu" role="navigation">
+        <a class="menu__link" href="#">Информация</a>
+        <a class="menu__link" href="#">Фото и видео</a>
+        <a class="menu__link"><img src="" alt="Логотип" class="logo"></a>
+        <a class="menu__link" href="#">Карта штата</a>
+        <a class="menu__link" href="#">Гостиницы</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Intro block -->
@@ -130,7 +132,7 @@
             <button>+</button>
           </label>
         </div>
-        <input type="submit" name="search-button" class="search-form__button" value="Найти">
+        <input type="submit" name="btn btn-type-search" class="search-form__button" value="Найти">
       </form>
     </div>
   </div>
@@ -140,9 +142,9 @@
     <div class="container">
       <div class="footer__tag">#visitsedona</div>
       <div class="footer__social">
-        <a class="social__link social__link-twitter"></a>
-        <a class="social__link social__link-facebook"></a>
-        <a class="social__link social__link-youtube"></a>
+        <a class="btn btn-type-social btn-type-social--twitter"></a>
+        <a class="btn btn-type-social btn-type-social--facebook"></a>
+        <a class="btn btn-type-social btn-type-social--youtube"></a>
       </div>
       <div class="footer__copyright">
         Website by <img src="" alt=""> for <img src="" alt="">

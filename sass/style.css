@@ -50,7 +50,6 @@
   display: flex;
   font-weight: bold;
   font-size: 14px;
-  color: #000;
   min-height: 55px;
   background-color: #fff; }
   .menu__link {
@@ -59,7 +58,8 @@
     justify-content: center;
     width: 20%;
     text-decoration: none;
-    line-height: 55px; }
+    line-height: 55px;
+    color: #000; }
     .menu__link:hover {
       color: #b5d2e4; }
     .menu__link:disabled {

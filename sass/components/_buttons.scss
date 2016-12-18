@@ -1,0 +1,50 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  background-color: $color-blue-btn;
+  color: $color-blue-btn-text;
+  &:hover {
+    background-color: $color-blue-btn-hvr;
+    color: $color-blue-btn-text-hvr;
+  }
+  &:focus {
+    background-color: $color-blue-btn-down;
+    color: $color-blue-btn-text-down;
+  }
+
+  &-type-book {
+    width: 142px;
+    height: 27px;
+    font-size: 14px;
+    line-height: 27px;
+    background-color: $color-brown-btn;
+    color: $color-brown-btn-text;
+    &:hover {
+      background-color: $color-brown-btn-hvr;
+      color: $color-brown-btn-text-hvr;
+    }
+    &:focus {
+      background-color: $color-brown-btn-down;
+      color: $color-brown-btn-text-down;
+    }
+  }
+
+  &-size-search {
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    font-size: 21px;
+  }
+
+  &-size-info {
+    width: 110px;
+    height: 27px;
+    font-size: 14px;
+    line-height: 27px;
+  }
+}

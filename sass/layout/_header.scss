@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  min-height: 55px;
+  background-color: #fff;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    text-decoration: none;
+    line-height: 55px;
+
+    &:hover {
+      color: $color-blue;
+    }
+    &:disabled {
+      color: $color-gray;
+    }
+
+    &--current {
+      color: $color-brown;
+      &:hover {
+        color: $color-brown-hvr
+      }
+    }
+
+    &--logo:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 138px;
+      height: 70px;
+      background-image: url(../img/logo-bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+  }
+}
+.logo {
+  z-index: 5;
+}

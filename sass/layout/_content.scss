@@ -1,0 +1,136 @@
+.content__description {
+  height: 170px;
+  vertical-align: middle;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+.content__title {
+  @extend .centered;
+  @extend .title-text;
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.content__subtitle {
+  @extend .centered;
+  @extend .subtitle-text;
+  width: 600px;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.features {
+  &__row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    &-type-1 {
+      height: 330px;
+    }
+    &-type-2 {
+      height: 255px;
+    }
+  }
+  &__image {
+    @extend .col-2-3;
+    &-type-1 {
+      background-image: url(../img/content-1.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    &-type-2 {
+      background-image: url(../img/content-2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+.card {
+  box-sizing: border-box;
+  @extend .col-1-3;
+  &__title {
+    @extend .centered;
+    @extend .title-text;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    @extend .centered;
+    @extend .subtitle-text;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__subline {
+    @extend .centered;
+    @extend .subtitle-text;
+    margin-top: 0;
+    margin-bottom: 25px;
+    position: relative;
+    width: 50px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 40px;
+      right: 0;
+      top: 50%;
+      margin-top: -0.5px;
+      display: block;
+      height: 1px;
+      background-color: #a8a8a8;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 40px;
+      top: 50%;
+      margin-top: -0.5px;
+      display: block;
+      height: 1px;
+      background-color: #a8a8a8;
+    }
+  }
+  &-type-1 {
+    & .card {
+      &__title {
+        padding: 25px;
+      }
+    }
+  }
+  &-type-2 {
+    color: #fff;
+    background-color: #81b3d2;
+    & .card {
+      &__title {
+        padding: 45px 54px 10px 54px;
+      }
+      &__subline {
+        &:before {
+          background-color: #fff;
+        }
+        &:after {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  &-type-3 {
+    background-color: #eeeeee;
+    & .card {
+      &__title {
+        padding: 45px 54px 10px 54px;
+      }
+    }
+  }
+  &__img {
+    @extend .centered;
+    margin-top: 60px;
+  }
+}

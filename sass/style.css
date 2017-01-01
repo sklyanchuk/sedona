@@ -36,6 +36,10 @@
     height: 27px;
     font-size: 14px;
     line-height: 27px; }
+  .btn-size-social {
+    width: 42px;
+    height: 42px;
+    margin: 5px; }
 
 .sprite {
   background-image: url(../img/spritesheet.png);
@@ -120,17 +124,17 @@
     height: 33px;
     display: inline-block; }
   .sprite.sprite-ico-social-twitter {
-    background-position: -5px -170px;
-    width: 19px;
-    height: 15px; }
+    background-position: 8px -158px;
+    width: 42px;
+    height: 42px; }
   .sprite.sprite-ico-social-youtube {
-    background-position: -34px -170px;
-    width: 20px;
-    height: 14px; }
+    background-position: -23px -156px;
+    width: 42px;
+    height: 42px; }
   .sprite.sprite-ico-soical-fb {
-    background-position: -270px -5px;
-    width: 9px;
-    height: 19px; }
+    background-position: -253px 4px;
+    width: 42px;
+    height: 42px; }
   .sprite.sprite-ico-star {
     background-position: -64px -170px;
     width: 18px;
@@ -170,6 +174,10 @@
 
 .col-2-3, .features__image {
   width: calc(100% / 3 * 2); }
+
+.row {
+  display: flex;
+  flex-direction: row; }
 
 .menu {
   display: flex;
@@ -252,8 +260,8 @@
     margin-top: 0;
     margin-bottom: 0; }
   .card__subtitle {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
     margin-top: 0;
     margin-bottom: 0; }
   .card__subline {
@@ -298,5 +306,18 @@
       padding: 45px 54px 10px 54px; }
   .card__img {
     margin-top: 60px; }
+
+.footer {
+  height: 120px;
+  background-color: #fff; }
+  .footer__tag {
+    font-size: 21px;
+    line-height: 120px;
+    text-align: center; }
+  .footer__social {
+    height: 100%; }
+  .footer__copyright {
+    height: 100%;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

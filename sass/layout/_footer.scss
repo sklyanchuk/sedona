@@ -1,1 +1,16 @@
-
+.footer {
+  height: 120px;
+  background-color: #fff;
+  &__tag {
+    font-size: 21px;
+    line-height: 120px;
+    text-align: center;
+  }
+  &__social {
+    height: 100%;
+  }
+  &__copyright {
+    height: 100%;
+    text-align: center;
+  }
+}

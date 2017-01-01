@@ -35,3 +35,7 @@
   @extend .col;
   width: calc(100% / 3 * 2);
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}

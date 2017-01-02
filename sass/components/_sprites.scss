@@ -7,7 +7,7 @@
 .sprite {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
-  display: block;
+  // display: block;
 
   &.sprite-ico-calendar {
     @include stitches-sprite(-5px, -5px, 20px, 22px);
@@ -89,14 +89,17 @@
 
   &.sprite-ico-social-twitter {
     @include stitches-sprite(8px, -158px, 42px, 42px);
+    display: inline-block;
   }
 
   &.sprite-ico-social-youtube {
     @include stitches-sprite(-23px, -156px, 42px, 42px);
+    display: inline-block;
   }
 
   &.sprite-ico-soical-fb {
     @include stitches-sprite(-253px, 4px, 42px, 42px);
+    display: inline-block;
   }
 
   &.sprite-ico-star {

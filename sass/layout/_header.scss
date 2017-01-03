@@ -8,6 +8,7 @@
 
   &__link {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 20%;
@@ -33,9 +34,10 @@
       content: '';
       position: absolute;
       top: 0;
+      left: 8px;
       width: 138px;
       height: 70px;
-      background-image: url(../img/logo-bg.png);
+      background-image: url('../img/logo-bg.png');
       background-position: center;
       background-repeat: no-repeat;
       z-index: 2;

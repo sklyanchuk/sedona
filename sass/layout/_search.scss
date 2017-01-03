@@ -1,0 +1,68 @@
+.search-block {
+  height: 765px;
+  position: relative;
+  &__header {
+    height: 240px;
+    background-color: #fff;
+    padding: 25px 150px;
+  }
+  &__title {
+    @extend .centered;
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 35px;
+  }
+  &__subtitle {
+    @extend .centered;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: lighter;
+  }
+  &__map {
+    height: 765px - 290px;
+    background-image: url('../img/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.search-form {
+  height: 480px;
+  width: 566px;
+  position: absolute;
+  left: 50%;
+  top: 217px;
+  transform: translateX(-566px / 2);
+  &__header {
+    height: 85px;
+    background-color: #766357;
+    margin: 0 auto;
+    line-height: 85px;
+    text-align: center;
+    @extend .title-text;
+    color: #fff;
+    font-weight: lighter;
+  }
+  &__inputs {
+    padding: 55px;
+    background-color: #fff;
+  }
+  &__input {
+    background-color: #f2f2f2;
+    &-type-num {
+      width: 36px;
+      height: 36px;
+      outline: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+      line-height: 36px;
+    }
+  }
+  &__param {
+    margin-bottom: 55px;
+  }
+  &__submit {
+    font-weight: lighter;
+  }
+}

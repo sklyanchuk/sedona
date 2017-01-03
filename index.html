@@ -105,31 +105,36 @@
         <p class="search-block__title">Заинтересовались?</p>
         <p class="search-block__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <div class="search-block__map"></div>
-      <form action="/" class="search-form">
+
+      <!-- Search Form -->
+      <form action="/" method="post" class="search-form">
         <div class="search-form__header">Поиск гостиницы в Седоне</div>
         <div class="search-form__inputs">
-          <label for="arrival_date">Дата заезда
-            <input type="date" name="arrival_date" id="arrival_date">
-          </label>
-          <br>
-          <label for="departure_date">Дата выезда
-            <input type="date" name="departure_date" id="departure_date">
-          </label>
-          <br>
-          <label for="adults">Взрослые
-            <button class="btn-type-qty">-</button>
-            <input type="number" name="adults" id="adults" value="2">
-            <button class="btn-type-qty">+</button>
-          </label>
-          <label for="kids">
-            <button class="btn-type-qty">-</button>
-            <input type="number" name="kids" id="kids" value="0">
-            <button class="btn-type-qty">+</button>
-          </label>
+          <div class="search-form__param">
+            <label for="arrival_date">Дата заезда:
+              <input type="date" name="arrival_date" id="arrival_date" class="search-form__input">
+            </label>
+            <br>
+            <label for="departure_date">Дата выезда:
+              <input type="date" name="departure_date" id="departure_date" class="search-form__input">
+            </label>
+            <br>
+            <label for="adults">Взрослые:
+              <button class="btn-type-qty">-</button>
+              <input type="number" name="adults" id="adults" value="2" class="search-form__input-type-num">
+              <button class="btn-type-qty">+</button>
+            </label>
+            <label for="kids">Дети:
+              <button class="btn-type-qty">-</button>
+              <input type="number" name="kids" id="kids" value="0" class="search-form__input-type-num">
+              <button class="btn-type-qty">+</button>
+            </label>
+          </div>
+          <input type="submit" name="submit-search" class="btn btn-size-search search-form__submit" value="Найти">
         </div>
-        <input type="submit" name="submit-search" class="btn btn-size-search search-form__button" value="Найти">
       </form>
+
+      <div class="search-block__map"></div>
     </div>
   </div>
 

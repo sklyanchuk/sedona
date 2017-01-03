@@ -26,27 +26,27 @@
   <!-- Sort hotels block -->
   <main class="hotels" role="main">
     <div class="container">
-      <form action="/" class="sort-form">
-          <section class="sort-block">
-            <h3 class="sort-block__title">Инфраструктура</h3>
-            <input type="checkbox" class="sort-block__checkbox" id="pool" checked>
-            <label for="pool" class="sort-block__label">Бассейн</label>
-            <input type="checkbox" class="sort-block__checkbox" id="parking">
-            <label for="parking">Парковка</label>
-            <input type="checkbox" class="sort-block__checkbox" id="wi-fi">
-            <label for="wi-fi">Wi-Fi</label>
+      <form action="/" class="filter">
+          <section class="filter__block">
+            <h3 class="filter__title">Инфраструктура:</h3>
+            <input type="checkbox" class="filter__checkbox" id="pool" checked>
+            <label for="pool" class="filter__label">Бассейн</label>
+            <input type="checkbox" class="filter__checkbox" id="parking">
+            <label for="parking" class="filter__label">Парковка</label>
+            <input type="checkbox" class="filter__checkbox" id="wi-fi">
+            <label for="wi-fi" class="filter__label">Wi-Fi</label>
           </section>
-          <section class="sort-block">
-            <h3 class="sort-block__title">Тип жилья:</h3>
-            <input type="checkbox" class="sort-block__checkbox" id="type-hotel" checked>
-            <label for="type-hotel">Гостиница</label>
-            <input type="checkbox" class="sort-block__checkbox" id="type-motel" checked>
-            <label for="type-motel">Мотель</label>
-            <input type="checkbox" class="sort-block__checkbox" id="type-apartment" checked>
-            <label for="type-apartment">Апартаменты</label>
+          <section class="filter__block">
+            <h3 class="filter__title">Тип жилья:</h3>
+            <input type="checkbox" class="filter__checkbox" id="type-hotel" checked>
+            <label for="type-hotel" class="filter__label">Гостиница</label>
+            <input type="checkbox" class="filter__checkbox" id="type-motel" checked>
+            <label for="type-motel" class="filter__label">Мотель</label>
+            <input type="checkbox" class="filter__checkbox" id="type-apartment" checked>
+            <label for="type-apartment" class="filter__label">Апартаменты</label>
           </section>
-          <section class="price">
-            <h3 class="price__title">Стоимость в сутки (Р):</h3>
+          <section class="filter__block price">
+            <h3 class="filter__title price__title">Стоимость в сутки (Р):</h3>
             <div class="price__range">
               <p class="price__from">От 0</p>
               <p class="price__to">до 3000</p>
@@ -60,15 +60,15 @@
       </form>
 
       <div class="results">
-        <div class="filter">
-          <p class="filter__title">Найдено: 3</p>
-          <div class="filter__sorting">
+        <div class="sort">
+          <p class="sort__title">Найдено: 3</p>
+          <div class="sort__param">
             <p>Сортировка:</p>
-            <a href="#" class="filter__toggle">По цене</a>
-            <a href="#" class="filter__toggle">По типу</a>
-            <a href="#" class="filter__toggle">По рейтингу</a>
+            <a href="#" class="sort__toggle">По цене</a>
+            <a href="#" class="sort__toggle">По типу</a>
+            <a href="#" class="sort__toggle">По рейтингу</a>
           </div>
-          <div class="filter__latches">
+          <div class="sort__latches">
             <img src="" alt="Сортировать по возрастанию" class="filter__latch">
             <img src="" alt="Сортировать по убыванию" class="filter__latch">
           </div>

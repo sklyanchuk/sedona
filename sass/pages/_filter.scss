@@ -1,0 +1,30 @@
+.filter {
+  box-sizing: border-box;
+  height: 215px;
+  background-image: url("../img/hotels-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  @extend .subtitle-text;
+  @extend %hotels-main-padding;
+
+  &__block {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+  }
+  &__title {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  &__checkbox {
+    position: absolute;
+  }
+  &__label {
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 23px;
+  }
+}

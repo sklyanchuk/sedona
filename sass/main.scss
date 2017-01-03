@@ -1,10 +1,12 @@
 @import 'helpers/_variables.scss';
+@import "helpers/placeholders";
 
 @import 'components/_buttons.scss';
 @import 'components/_sprites';
 
-@import 'layout/_base.scss';
-@import 'layout/_header.scss';
-@import 'layout/_content.scss';
-@import 'layout/_footer.scss';
-@import 'layout/_search.scss';
+@import 'pages/_base.scss';
+@import 'pages/_header.scss';
+@import 'pages/_content.scss';
+@import 'pages/_footer.scss';
+@import 'pages/_search.scss';
+@import "pages/_filter";

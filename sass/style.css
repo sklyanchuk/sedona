@@ -5,6 +5,7 @@
   text-decoration: none;
   outline: none;
   border: none;
+  cursor: pointer;
   background-color: #81b3d2;
   color: #eef4f9; }
   .btn:hover {
@@ -30,12 +31,16 @@
     width: 36px;
     height: 36px;
     background-color: #f2f2f2;
-    opacity: 0.5;
+    color: #a9a9a9;
     outline: none;
     border: none;
     margin: 0;
     padding: 0;
-    line-height: 36px; }
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: -4px;
+    margin-left: -4px; }
   .btn-size-search {
     width: 100%;
     height: 58px;
@@ -51,103 +56,103 @@
     height: 42px;
     margin: 3px; }
 
-.sprite {
+.sprite, .search-form__input-type-date::after {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat; }
-  .sprite.sprite-ico-calendar {
+  .sprite.sprite-ico-calendar, .search-form__input-type-date::after {
     background-position: -5px -5px;
     width: 20px;
     height: 22px; }
-  .sprite.sprite-ico-calendar-down {
+  .sprite.sprite-ico-calendar-down, .sprite-ico-calendar-down.search-form__input-type-date::after, .search-form__input-type-date:focus::after, .sprite.search-form__input-type-date:focus {
     background-position: -35px -5px;
     width: 20px;
     height: 22px; }
-  .sprite.sprite-ico-calendar-hover {
+  .sprite.sprite-ico-calendar-hover, .sprite-ico-calendar-hover.search-form__input-type-date::after, .search-form__input-type-date:hover::after, .sprite.search-form__input-type-date:hover {
     background-position: -65px -5px;
     width: 20px;
     height: 22px; }
-  .sprite.sprite-ico-checkbox {
+  .sprite.sprite-ico-checkbox, .sprite-ico-checkbox.search-form__input-type-date::after {
     background-position: -95px -5px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-active {
+  .sprite.sprite-ico-checkbox-active, .sprite-ico-checkbox-active.search-form__input-type-date::after {
     background-position: -125px -5px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-active-down {
+  .sprite.sprite-ico-checkbox-active-down, .sprite-ico-checkbox-active-down.search-form__input-type-date::after {
     background-position: -155px -5px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-active-hover {
+  .sprite.sprite-ico-checkbox-active-hover, .sprite-ico-checkbox-active-hover.search-form__input-type-date::after {
     background-position: -95px -35px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-down {
+  .sprite.sprite-ico-checkbox-down, .sprite-ico-checkbox-down.search-form__input-type-date::after {
     background-position: -125px -35px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-hover {
+  .sprite.sprite-ico-checkbox-hover, .sprite-ico-checkbox-hover.search-form__input-type-date::after {
     background-position: -155px -35px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-ft-box {
+  .sprite.sprite-ico-ft-box, .sprite-ico-ft-box.search-form__input-type-date::after {
     background-position: -5px -65px;
     width: 64px;
     height: 76px; }
-  .sprite.sprite-ico-ft-burger {
+  .sprite.sprite-ico-ft-burger, .sprite-ico-ft-burger.search-form__input-type-date::after {
     background-position: -79px -65px;
     width: 74px;
     height: 76px; }
-  .sprite.sprite-ico-ft-house {
+  .sprite.sprite-ico-ft-house, .sprite-ico-ft-house.search-form__input-type-date::after {
     background-position: -185px -5px;
     width: 75px;
     height: 76px; }
-  .sprite.sprite-ico-logo-a {
+  .sprite.sprite-ico-logo-a, .sprite-ico-logo-a.search-form__input-type-date::after {
     background-position: -163px -87px;
     width: 27px;
     height: 30px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-a-down {
+  .sprite.sprite-ico-logo-a-down, .sprite-ico-logo-a-down.search-form__input-type-date::after {
     background-position: -200px -87px;
     width: 27px;
     height: 30px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-a-hover {
+  .sprite.sprite-ico-logo-a-hover, .sprite-ico-logo-a-hover.search-form__input-type-date::after {
     background-position: -237px -87px;
     width: 27px;
     height: 30px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-academy {
+  .sprite.sprite-ico-logo-academy, .sprite-ico-logo-academy.search-form__input-type-date::after {
     background-position: -163px -127px;
     width: 27px;
     height: 33px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-academy-down {
+  .sprite.sprite-ico-logo-academy-down, .sprite-ico-logo-academy-down.search-form__input-type-date::after {
     background-position: -200px -127px;
     width: 27px;
     height: 33px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-academy-hover {
+  .sprite.sprite-ico-logo-academy-hover, .sprite-ico-logo-academy-hover.search-form__input-type-date::after {
     background-position: -237px -127px;
     width: 27px;
     height: 33px;
     display: inline-block; }
-  .sprite.sprite-ico-social-twitter {
+  .sprite.sprite-ico-social-twitter, .sprite-ico-social-twitter.search-form__input-type-date::after {
     background-position: 8px -158px;
     width: 42px;
     height: 42px;
     display: inline-block; }
-  .sprite.sprite-ico-social-youtube {
+  .sprite.sprite-ico-social-youtube, .sprite-ico-social-youtube.search-form__input-type-date::after {
     background-position: -23px -156px;
     width: 42px;
     height: 42px;
     display: inline-block; }
-  .sprite.sprite-ico-soical-fb {
+  .sprite.sprite-ico-soical-fb, .sprite-ico-soical-fb.search-form__input-type-date::after {
     background-position: -253px 4px;
     width: 42px;
     height: 42px;
     display: inline-block; }
-  .sprite.sprite-ico-star {
+  .sprite.sprite-ico-star, .sprite-ico-star.search-form__input-type-date::after {
     background-position: -64px -170px;
     width: 18px;
     height: 17px;
@@ -381,17 +386,46 @@
     font-weight: lighter; }
   .search-form__inputs {
     padding: 55px;
-    background-color: #fff; }
+    background-color: #fff;
+    font-size: 14px; }
   .search-form__input {
+    width: 456px;
     background-color: #f2f2f2; }
+    .search-form__input-type-date {
+      width: 290px;
+      height: 36px;
+      border: 0;
+      outline: none;
+      margin-bottom: 30px;
+      margin-right: -1px;
+      margin-left: 0;
+      padding-left: 15px;
+      padding-right: 40px;
+      position: relative; }
+      .search-form__input-type-date::after {
+        content: '';
+        position: absolute;
+        right: 10px; }
     .search-form__input-type-num {
+      font-size: 14px;
       width: 36px;
       height: 36px;
       outline: none;
       border: none;
       margin: 0;
       padding: 0;
-      line-height: 36px; }
+      line-height: 36px;
+      text-align: center; }
+  .search-form__label {
+    height: 36px;
+    line-height: 36px;
+    width: 108px;
+    display: inline-block; }
+    .search-form__label-type-kids {
+      text-align: center;
+      margin-left: 24px; }
+    .search-form__label-type-adults {
+      margin-right: 4px; }
   .search-form__param {
     margin-bottom: 55px; }
   .search-form__submit {

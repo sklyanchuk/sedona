@@ -46,10 +46,38 @@
   &__inputs {
     padding: 55px;
     background-color: #fff;
+    font-size: 14px;
   }
   &__input {
+    width: 456px;
     background-color: #f2f2f2;
+    &-type-date {
+      width: 290px;
+      height: 36px;
+      border: 0;
+      outline: none;
+      margin-bottom: 30px;
+      margin-right: -1px;
+      margin-left: 0;
+      padding-left: 15px;
+      padding-right: 40px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        @extend .sprite;
+        @extend .sprite-ico-calendar;
+        right: 10px;
+      }
+      &:hover {
+        @extend .sprite-ico-calendar-hover;
+      }
+      &:focus {
+        @extend .sprite-ico-calendar-down;
+      }
+    }
     &-type-num {
+      font-size: 14px;
       width: 36px;
       height: 36px;
       outline: none;
@@ -57,6 +85,20 @@
       margin: 0;
       padding: 0;
       line-height: 36px;
+      text-align: center;
+    }
+  }
+  &__label {
+    height: 36px;
+    line-height: 36px;
+    width: 108px;
+    display: inline-block;
+    &-type-kids {
+      text-align: center;
+      margin-left: 24px;
+    }
+    &-type-adults {
+      margin-right: 4px;
     }
   }
   &__param {

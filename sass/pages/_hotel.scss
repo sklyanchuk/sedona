@@ -1,0 +1,51 @@
+.hotel {
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 150px;
+  @extend %hotels-main-padding;
+  &__img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 27px;
+  }
+  &__description {
+    display: inline-block;
+    vertical-align: top;
+    width: 427px;
+  }
+  &__rating {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 110px;
+  }
+  &__title {
+    font-size: 21px;
+    margin: 0;
+    line-height: 21px;
+  }
+  &__type, &__price {
+    display: inline-block;
+    vertical-align: top;
+    width: 110px;
+    font-weight: lighter;
+    margin: 0 10px 0 0;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    @extend .subtitle-text;
+  }
+  &__infolink {
+    margin-right: 10px;
+  }
+  &__figure {
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #b9b9b9;
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 42px;
+    font-weight: lighter;
+  }
+}

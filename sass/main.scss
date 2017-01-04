@@ -1,12 +1,13 @@
-@import 'helpers/_variables.scss';
+@import "helpers/variables";
 @import "helpers/placeholders";
 
-@import 'components/_buttons.scss';
-@import 'components/_sprites';
+@import "components/buttons";
+@import "components/sprites";
 
-@import 'pages/_base.scss';
-@import 'pages/_header.scss';
-@import 'pages/_content.scss';
-@import 'pages/_footer.scss';
-@import 'pages/_search.scss';
-@import "pages/_filter";
+@import "pages/base";
+@import "pages/header";
+@import "pages/content";
+@import "pages/footer";
+@import "pages/search";
+@import "pages/filter";
+@import "pages/hotel";

@@ -1,4 +1,4 @@
-.filter {
+.filter, .hotel {
   padding: 30px; }
 
 .btn {
@@ -180,7 +180,7 @@ body {
   font-size: 21px;
   line-height: 26px; }
 
-.subtitle-text, .content__subtitle, .card__subtitle, .card__subline, .filter {
+.subtitle-text, .content__subtitle, .card__subtitle, .card__subline, .filter, .hotel__type, .hotel__price {
   font-size: 14px;
   line-height: 21px;
   font-weight: lighter; }
@@ -458,5 +458,47 @@ body {
     display: block;
     padding-left: 40px;
     margin-bottom: 23px; }
+
+.hotel {
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 150px; }
+  .hotel__img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 27px; }
+  .hotel__description {
+    display: inline-block;
+    vertical-align: top;
+    width: 427px; }
+  .hotel__rating {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 110px; }
+  .hotel__title {
+    font-size: 21px;
+    margin: 0;
+    line-height: 21px; }
+  .hotel__type, .hotel__price {
+    display: inline-block;
+    vertical-align: top;
+    width: 110px;
+    font-weight: lighter;
+    margin: 0 10px 0 0;
+    padding-top: 9px;
+    padding-bottom: 12px; }
+  .hotel__infolink {
+    margin-right: 10px; }
+  .hotel__figure {
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #b9b9b9;
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 42px;
+    font-weight: lighter; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,11 @@
 .btn {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: center;
   text-decoration: none;
   outline: none;
   border: none;
+  padding: 0;
   cursor: pointer;
   background-color: $color-blue-btn;
   color: $color-blue-btn-text;

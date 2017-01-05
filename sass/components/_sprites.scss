@@ -7,7 +7,6 @@
 .sprite {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
-  // display: block;
 
   &.sprite-ico-calendar {
     @include stitches-sprite(-5px, -5px, 20px, 22px);

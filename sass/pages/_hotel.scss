@@ -7,6 +7,8 @@
     display: inline-block;
     vertical-align: top;
     margin-right: 27px;
+    width: 135px;
+    height: 90px;
   }
   &__description {
     display: inline-block;
@@ -47,5 +49,8 @@
     text-align: center;
     margin-top: 42px;
     font-weight: lighter;
+  }
+  &__star {
+    width: 25%;
   }
 }

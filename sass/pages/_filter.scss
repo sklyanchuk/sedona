@@ -20,7 +20,33 @@
     margin-bottom: 24px;
   }
   &__checkbox {
-    position: absolute;
+    display: none;
+    & + .filter__label {
+      position: relative;
+      cursor: pointer;
+    }
+    & + .filter__label::before {
+      position: absolute;
+      content: "";
+      @extend .sprite;
+      @extend .sprite-ico-checkbox;
+      left: 0;
+    }
+    &:checked + .filter__label::before {
+      @extend .sprite-ico-checkbox-active;
+    }
+    & + .filter__label:hover {
+      @extend .sprite-ico-checkbox-hover;
+    }
+    &:checked + .filter__label:hover {
+      @extend .sprite-ico-checkbox-active-hover;
+    }
+    &:disabled + .filter__label {
+      @extend .sprite-ico-checkbox-down;
+    }
+    &:checked:disabled + .filter__label {
+      @extend .sprite-ico-checkbox-active-down;
+    }
   }
   &__label {
     display: block;

@@ -60,103 +60,103 @@
     height: 42px;
     margin: 3px; }
 
-.sprite, .search-form__input-type-date::after {
+.sprite, .search-form__input-type-date::after, .filter__checkbox + .filter__label::before {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat; }
-  .sprite.sprite-ico-calendar, .search-form__input-type-date::after {
+  .sprite.sprite-ico-calendar, .search-form__input-type-date::after, .filter__checkbox + .sprite-ico-calendar.filter__label::before {
     background-position: -5px -5px;
     width: 20px;
     height: 22px; }
-  .sprite.sprite-ico-calendar-down, .sprite-ico-calendar-down.search-form__input-type-date::after, .search-form__input-type-date:focus::after, .sprite.search-form__input-type-date:focus {
+  .sprite.sprite-ico-calendar-down, .sprite-ico-calendar-down.search-form__input-type-date::after, .search-form__input-type-date:focus::after, .sprite.search-form__input-type-date:focus, .filter__checkbox + .search-form__input-type-date.filter__label:focus::before, .filter__checkbox + .sprite-ico-calendar-down.filter__label::before {
     background-position: -35px -5px;
     width: 20px;
     height: 22px; }
-  .sprite.sprite-ico-calendar-hover, .sprite-ico-calendar-hover.search-form__input-type-date::after, .search-form__input-type-date:hover::after, .sprite.search-form__input-type-date:hover {
+  .sprite.sprite-ico-calendar-hover, .sprite-ico-calendar-hover.search-form__input-type-date::after, .search-form__input-type-date:hover::after, .sprite.search-form__input-type-date:hover, .filter__checkbox + .search-form__input-type-date.filter__label:hover::before, .filter__checkbox + .sprite-ico-calendar-hover.filter__label::before {
     background-position: -65px -5px;
     width: 20px;
     height: 22px; }
-  .sprite.sprite-ico-checkbox, .sprite-ico-checkbox.search-form__input-type-date::after {
+  .sprite.sprite-ico-checkbox, .sprite-ico-checkbox.search-form__input-type-date::after, .filter__checkbox + .filter__label::before {
     background-position: -95px -5px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-active, .sprite-ico-checkbox-active.search-form__input-type-date::after {
+  .sprite.sprite-ico-checkbox-active, .sprite-ico-checkbox-active.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-checkbox-active.filter__label::before, .filter__checkbox:checked + .filter__label::before {
     background-position: -125px -5px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-active-down, .sprite-ico-checkbox-active-down.search-form__input-type-date::after {
+  .sprite.sprite-ico-checkbox-active-down, .sprite-ico-checkbox-active-down.search-form__input-type-date::after, .filter__checkbox:checked:disabled + .search-form__input-type-date.filter__label::after, .filter__checkbox + .sprite-ico-checkbox-active-down.filter__label::before, .filter__checkbox:checked:disabled + .filter__label::before, .filter__checkbox:checked:disabled + .sprite.filter__label {
     background-position: -155px -5px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-active-hover, .sprite-ico-checkbox-active-hover.search-form__input-type-date::after {
+  .sprite.sprite-ico-checkbox-active-hover, .sprite-ico-checkbox-active-hover.search-form__input-type-date::after, .filter__checkbox:checked + .search-form__input-type-date.filter__label:hover::after, .filter__checkbox + .sprite-ico-checkbox-active-hover.filter__label::before, .filter__checkbox:checked + .filter__label:hover::before, .filter__checkbox:checked + .sprite.filter__label:hover {
     background-position: -95px -35px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-down, .sprite-ico-checkbox-down.search-form__input-type-date::after {
+  .sprite.sprite-ico-checkbox-down, .sprite-ico-checkbox-down.search-form__input-type-date::after, .filter__checkbox:disabled + .search-form__input-type-date.filter__label::after, .filter__checkbox + .sprite-ico-checkbox-down.filter__label::before, .filter__checkbox:disabled + .filter__label::before, .filter__checkbox:disabled + .sprite.filter__label {
     background-position: -125px -35px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-checkbox-hover, .sprite-ico-checkbox-hover.search-form__input-type-date::after {
+  .sprite.sprite-ico-checkbox-hover, .sprite-ico-checkbox-hover.search-form__input-type-date::after, .filter__checkbox + .search-form__input-type-date.filter__label:hover::after, .filter__checkbox + .sprite-ico-checkbox-hover.filter__label::before, .filter__checkbox + .filter__label:hover::before, .filter__checkbox + .sprite.filter__label:hover {
     background-position: -155px -35px;
     width: 20px;
     height: 20px; }
-  .sprite.sprite-ico-ft-box, .sprite-ico-ft-box.search-form__input-type-date::after {
+  .sprite.sprite-ico-ft-box, .sprite-ico-ft-box.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-ft-box.filter__label::before {
     background-position: -5px -65px;
     width: 64px;
     height: 76px; }
-  .sprite.sprite-ico-ft-burger, .sprite-ico-ft-burger.search-form__input-type-date::after {
+  .sprite.sprite-ico-ft-burger, .sprite-ico-ft-burger.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-ft-burger.filter__label::before {
     background-position: -79px -65px;
     width: 74px;
     height: 76px; }
-  .sprite.sprite-ico-ft-house, .sprite-ico-ft-house.search-form__input-type-date::after {
+  .sprite.sprite-ico-ft-house, .sprite-ico-ft-house.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-ft-house.filter__label::before {
     background-position: -185px -5px;
     width: 75px;
     height: 76px; }
-  .sprite.sprite-ico-logo-a, .sprite-ico-logo-a.search-form__input-type-date::after {
+  .sprite.sprite-ico-logo-a, .sprite-ico-logo-a.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-logo-a.filter__label::before {
     background-position: -163px -87px;
     width: 27px;
     height: 30px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-a-down, .sprite-ico-logo-a-down.search-form__input-type-date::after {
+  .sprite.sprite-ico-logo-a-down, .sprite-ico-logo-a-down.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-logo-a-down.filter__label::before {
     background-position: -200px -87px;
     width: 27px;
     height: 30px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-a-hover, .sprite-ico-logo-a-hover.search-form__input-type-date::after {
+  .sprite.sprite-ico-logo-a-hover, .sprite-ico-logo-a-hover.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-logo-a-hover.filter__label::before {
     background-position: -237px -87px;
     width: 27px;
     height: 30px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-academy, .sprite-ico-logo-academy.search-form__input-type-date::after {
+  .sprite.sprite-ico-logo-academy, .sprite-ico-logo-academy.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-logo-academy.filter__label::before {
     background-position: -163px -127px;
     width: 27px;
     height: 33px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-academy-down, .sprite-ico-logo-academy-down.search-form__input-type-date::after {
+  .sprite.sprite-ico-logo-academy-down, .sprite-ico-logo-academy-down.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-logo-academy-down.filter__label::before {
     background-position: -200px -127px;
     width: 27px;
     height: 33px;
     display: inline-block; }
-  .sprite.sprite-ico-logo-academy-hover, .sprite-ico-logo-academy-hover.search-form__input-type-date::after {
+  .sprite.sprite-ico-logo-academy-hover, .sprite-ico-logo-academy-hover.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-logo-academy-hover.filter__label::before {
     background-position: -237px -127px;
     width: 27px;
     height: 33px;
     display: inline-block; }
-  .sprite.sprite-ico-social-twitter, .sprite-ico-social-twitter.search-form__input-type-date::after {
+  .sprite.sprite-ico-social-twitter, .sprite-ico-social-twitter.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-social-twitter.filter__label::before {
     background-position: 8px -158px;
     width: 42px;
     height: 42px;
     display: inline-block; }
-  .sprite.sprite-ico-social-youtube, .sprite-ico-social-youtube.search-form__input-type-date::after {
+  .sprite.sprite-ico-social-youtube, .sprite-ico-social-youtube.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-social-youtube.filter__label::before {
     background-position: -23px -156px;
     width: 42px;
     height: 42px;
     display: inline-block; }
-  .sprite.sprite-ico-soical-fb, .sprite-ico-soical-fb.search-form__input-type-date::after {
+  .sprite.sprite-ico-soical-fb, .sprite-ico-soical-fb.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-soical-fb.filter__label::before {
     background-position: -253px 4px;
     width: 42px;
     height: 42px;
     display: inline-block; }
-  .sprite.sprite-ico-star, .sprite-ico-star.search-form__input-type-date::after {
+  .sprite.sprite-ico-star, .sprite-ico-star.search-form__input-type-date::after, .filter__checkbox + .sprite-ico-star.filter__label::before {
     background-position: -64px -170px;
     width: 18px;
     height: 17px;
@@ -454,7 +454,14 @@
     margin: 0;
     margin-bottom: 24px; }
   .filter__checkbox {
-    position: absolute; }
+    display: none; }
+    .filter__checkbox + .filter__label {
+      position: relative;
+      cursor: pointer; }
+    .filter__checkbox + .filter__label::before {
+      position: absolute;
+      content: "";
+      left: 0; }
   .filter__label {
     display: block;
     padding-left: 40px;

@@ -170,7 +170,8 @@
 .container {
   width: 768px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative; }
 
 .centered, .content__title, .content__subtitle, .card__title, .card__subtitle, .card__subline, .card__img, .search-block__title, .search-block__subtitle {
   margin-left: auto;
@@ -356,7 +357,7 @@
 
 .search-block {
   height: 765px;
-  position: relative; }
+  width: 100%; }
   .search-block__header {
     height: 240px;
     background-color: #fff;
@@ -379,8 +380,8 @@
   height: 480px;
   width: 566px;
   position: absolute;
-  left: 50%;
   top: 216px;
+  left: 50%;
   transform: translateX(-283px); }
   .search-form__header {
     height: 85px;

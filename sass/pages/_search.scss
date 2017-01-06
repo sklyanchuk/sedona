@@ -1,6 +1,6 @@
 .search-block {
   height: 765px;
-  position: relative;
+  width: 100%;
   &__header {
     height: 240px;
     background-color: #fff;
@@ -30,9 +30,9 @@
   height: 480px;
   width: 566px;
   position: absolute;
-  left: 50%;
   top: 216px;
-  transform: translateX(-566px / 2);
+  left: 50%;
+  transform: translateX(-283px);
   &__header {
     height: 85px;
     background-color: #766357;

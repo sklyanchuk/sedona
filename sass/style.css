@@ -528,7 +528,8 @@
     font-size: 12px;
     line-height: 22px;
     height: 22px;
-    margin: 0; }
+    margin: 0;
+    width: 470px; }
   .sort__toggle {
     display: inline-block;
     height: 16px;
@@ -543,33 +544,50 @@
     .sort__toggle:focus {
       border: 0;
       color: #81b3d2; }
+    .sort__toggle:hover {
+      color: #81b3d2; }
+    .sort__toggle:active {
+      color: #000;
+      border: 0; }
   .sort__latches {
-    display: inline-block; }
+    display: inline-block;
+    width: 50px;
+    box-sizing: border-box;
+    margin-left: 13px; }
   .sort__latch {
     display: inline-block;
     width: 0;
     height: 0;
-    padding: 6px;
+    padding: 0;
+    margin-left: 20px;
     position: relative; }
     .sort__latch--incr:after {
       position: absolute;
       content: "";
+      top: -19px;
       width: 0;
       height: 0;
       border-top: 10px solid transparent;
-      border-right: 4px solid transparent;
+      border-right: 5px solid transparent;
       border-bottom: 10px solid #ccc;
-      border-left: 4px solid transparent; }
+      border-left: 5px solid transparent; }
+    .sort__latch--incr:focus::after {
+      border-bottom-color: #81b3d2; }
+    .sort__latch--incr:hover::after {
+      border-bottom-color: #000; }
     .sort__latch--decr:after {
       position: absolute;
       content: "";
+      top: -9px;
       width: 0;
       height: 0;
       border-top: 10px solid #ccc;
-      border-right: 4px solid transparent;
+      border-right: 5px solid transparent;
       border-bottom: 10px solid transparent;
-      border-left: 4px solid transparent; }
-    .sort__latch:focus {
-      border-color: #81b3d2; }
+      border-left: 5px solid transparent; }
+    .sort__latch--decr:focus::after {
+      border-top-color: #81b3d2; }
+    .sort__latch--decr:hover::after {
+      border-top-color: #000; }
 
 /*# sourceMappingURL=style.css.map */

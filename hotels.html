@@ -26,7 +26,7 @@
   <!-- Sort hotels block -->
   <main class="hotels" role="main">
     <div class="container">
-      <form action="/" class="filter">
+      <form action="/echo" method="post" class="filter" oninput="price__from.value=slider__track.value">
           <section class="filter__block">
             <h3 class="filter__title">Инфраструктура:</h3>
             <input type="checkbox" class="filter__checkbox" id="pool" checked>
@@ -48,13 +48,13 @@
           <section class="filter__block price">
             <h3 class="filter__title price__title">Стоимость в сутки (Р):</h3>
             <div class="price__range">
-              <output class="price__elem price__from">От 0</output>
-              <output class="price__elem price__to">до 3000</output>
+              <div class="price__elem price__from">От <output name="price__from">0</output></div>
+              <div class="price__elem price__to">до <output name="price_to">3000</output></div>
             </div>
             <div class="slider">
-              <div class="slider__block"></div>
-              <div class="slider__slider"></div>
-              <div class="slider__slider slider__slider--active"></div>
+              <input type="range" class="slider__track"  min="0" max="10000" step="100" value="0" name="slider__track"></input>
+              <div class="slider__slider slider__left"></div>
+              <div class="slider__slider slider__right"></div>
             </div>
           </section>
       </form>
@@ -68,13 +68,13 @@
             <a href="#" class="sort__toggle">По рейтингу</a>
           </div>
           <div class="sort__latches">
-            <a href="#" class="sort__latch sort__latch--incr"></a>
+            <a href="#" class="sort__latch sort__latch--incr" focus></a>
             <a href="#" class="sort__latch sort__latch--decr"></a>
           </div>
         </div>
 
         <article class="hotel">
-          <img src="img/hotels-amara.jpg" alt="Фотография гостиницы Amara Resort & SPA" class="hotel__img" width="135" height="90">
+          <a href="img/hotels-amara.jpg"><img src="img/hotels-amara.jpg" alt="Фотография гостиницы Amara Resort & SPA" class="hotel__img" width="135" height="90"></a>
           <section class="hotel__description">
             <div class="hotel__about">
               <h2 class="hotel__title">Amara Resort & SPA</h2>
@@ -93,7 +93,7 @@
           </section>
         </article>
         <article class="hotel">
-          <img src="img/hotels-desert.jpg" alt="Фотография мотеля Desert Quail Inn" class="hotel__img" width="135" height="90">
+          <a href="img/hotels-desert.jpg"><img src="img/hotels-desert.jpg" alt="Фотография мотеля Desert Quail Inn" class="hotel__img" width="135" height="90"></a>
           <section class="hotel__description">
             <div class="hotel__about">
               <h2 class="hotel__title">Desert Quail Inn</h2>
@@ -110,7 +110,7 @@
           </section>
         </article>
         <article class="hotel">
-          <img src="img/hotels-villas.jpg" alt="Фотография апартаментов Villas At Poco Diablo" class="hotel__img" width="135" height="90">
+          <a href="img/hotels-villas.jpg"><img src="img/hotels-villas.jpg" alt="Фотография апартаментов Villas At Poco Diablo" class="hotel__img" width="135" height="90"></a>
           <section class="hotel__description">
             <div class="hotel__about">
               <h2 class="hotel__title">Villas At Poco Diablo</h2>

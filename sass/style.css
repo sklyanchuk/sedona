@@ -495,6 +495,28 @@
     top: 15px;
     background-color: #fff; }
 
+.slider {
+  width: 220px;
+  height: 55px; }
+  .slider__slider {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block; }
+    .slider__slider::after {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 8px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #ccc; }
+    .slider__slider:hover::after {
+      background-color: #1c4f80; }
+
 .hotel {
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
@@ -539,7 +561,10 @@
     margin-top: 42px;
     font-weight: lighter; }
   .hotel__star {
-    width: 25%; }
+    width: 25%;
+    transition: 0.2s; }
+    .hotel__star:hover {
+      transform: scale(1.2); }
 
 .sort {
   border-bottom: 1px solid #ccc;

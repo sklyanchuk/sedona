@@ -87,3 +87,29 @@
     }
   }
 }
+
+.slider {
+  width: 220px;
+  height: 55px;
+  &__slider {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 8px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+    &:hover::after {
+      background-color: #1c4f80;
+    }
+  }
+}

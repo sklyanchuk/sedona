@@ -98,6 +98,7 @@
     border-radius: 50%;
     position: relative;
     display: inline-block;
+    cursor: pointer;
     &::after {
       position: absolute;
       content: "";

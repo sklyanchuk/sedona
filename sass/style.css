@@ -168,10 +168,18 @@
   font-weight: bold; }
 
 .container {
-  width: 768px;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 100%; } }
+  @media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .container {
+      width: 768px; } }
+  @media only screen and (min-width: 1280px) {
+    .container {
+      width: 1280px; } }
 
 .centered, .content__title, .content__subtitle, .card__title, .card__subtitle, .card__subline, .card__img, .search-block__title, .search-block__subtitle {
   margin-left: auto;
@@ -504,7 +512,8 @@
     background-color: #fff;
     border-radius: 50%;
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
     .slider__slider::after {
       position: absolute;
       content: "";

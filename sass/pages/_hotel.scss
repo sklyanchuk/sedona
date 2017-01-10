@@ -2,24 +2,35 @@
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   height: 150px;
-  @extend %hotels-main-padding;
+  @include respond-to(handhelds) {
+    padding: 30px;
+  }
+  @include respond-to(medium-screens) {
+    padding: 30px 80px;
+  }
+  @include respond-to(wide-screens) {
+    padding: 30px 80px;
+  }
   &__img {
     display: inline-block;
     vertical-align: top;
     margin-right: 27px;
     width: 135px;
     height: 90px;
+    float: left;
   }
   &__description {
     display: inline-block;
     vertical-align: top;
-    width: 427px;
+    width: 400px;
+    float: left;
   }
   &__rating {
     display: inline-block;
     vertical-align: top;
     text-align: right;
     width: 110px;
+    float: right;
   }
   &__title {
     font-size: 21px;
@@ -48,6 +59,7 @@
     font-size: 14px;
     text-align: center;
     margin-top: 42px;
+    margin-bottom: 0;
     font-weight: lighter;
   }
   &__star {

@@ -1,6 +1,3 @@
-.filter, .hotel, .sort {
-  padding: 30px; }
-
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -460,9 +457,29 @@
   background-size: cover;
   background-position: center;
   color: #fff; }
+  @media only screen and (max-width: 768px) {
+    .filter {
+      padding: 30px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .filter {
+      padding: 30px 81px; } }
+  @media only screen and (min-width: 1280px) {
+    .filter {
+      padding: 30px 81px; } }
   .filter__block {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top; }
+  .filter__infr {
+    float: left;
+    width: 230px; }
+    @media only screen and (min-width: 769px) and (max-width: 1279px) {
+      .filter__infr {
+        margin-rigth: 25px; } }
+    @media only screen and (min-width: 1280px) {
+      .filter__infr {
+        margin-right: 25px; } }
+  .filter__type {
+    float: left;
     width: 230px; }
   .filter__title {
     font-size: 16px;
@@ -483,31 +500,41 @@
     margin-bottom: 23px;
     font-weight: 400; }
 
-.price__range {
-  width: 220px;
-  height: 55px;
-  border: 2px solid #fff;
-  border-radius: 2px;
-  padding: 0; }
-.price__elem {
-  display: inline-block;
-  width: 108px;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  line-height: 55px;
-  font-weight: 400; }
-.price__from {
-  position: relative; }
-  .price__from::after {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 25px;
-    right: 0;
-    top: 15px;
-    background-color: #fff; }
+.price {
+  float: right; }
+  .price__range {
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    padding: 0; }
+    @media only screen and (max-width: 768px) {
+      .price__range {
+        width: 220px; } }
+    @media only screen and (min-width: 769px) and (max-width: 1279px) {
+      .price__range {
+        width: 340px; } }
+    @media only screen and (min-width: 1280px) {
+      .price__range {
+        width: 340px; } }
+  .price__elem {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 55px;
+    font-weight: 400; }
+  .price__from {
+    position: relative; }
+    .price__from::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 25px;
+      right: -3px;
+      top: 13px;
+      background-color: #fff; }
 
 .slider {
   width: 220px;
@@ -536,21 +563,33 @@
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   height: 150px; }
+  @media only screen and (max-width: 768px) {
+    .hotel {
+      padding: 30px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .hotel {
+      padding: 30px 80px; } }
+  @media only screen and (min-width: 1280px) {
+    .hotel {
+      padding: 30px 80px; } }
   .hotel__img {
     display: inline-block;
     vertical-align: top;
     margin-right: 27px;
     width: 135px;
-    height: 90px; }
+    height: 90px;
+    float: left; }
   .hotel__description {
     display: inline-block;
     vertical-align: top;
-    width: 427px; }
+    width: 400px;
+    float: left; }
   .hotel__rating {
     display: inline-block;
     vertical-align: top;
     text-align: right;
-    width: 110px; }
+    width: 110px;
+    float: right; }
   .hotel__title {
     font-size: 21px;
     margin: 0;
@@ -574,6 +613,7 @@
     font-size: 14px;
     text-align: center;
     margin-top: 42px;
+    margin-bottom: 0;
     font-weight: lighter; }
   .hotel__star {
     width: 25%;
@@ -584,12 +624,22 @@
 .sort {
   border-bottom: 1px solid #ccc;
   height: 22px; }
+  @media only screen and (max-width: 768px) {
+    .sort {
+      padding: 30px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .sort {
+      padding: 30px 80px; } }
+  @media only screen and (min-width: 1280px) {
+    .sort {
+      padding: 30px 80px; } }
   .sort__title {
     margin: 0;
     display: inline-block;
     margin-right: 27px;
     width: 135px;
-    font-size: 21px; }
+    font-size: 21px;
+    float: left; }
   .sort__param {
     font-weight: 400;
     display: inline-block;
@@ -597,7 +647,8 @@
     line-height: 22px;
     height: 22px;
     margin: 0;
-    width: 470px; }
+    width: 470px;
+    float: left; }
   .sort__toggle {
     display: inline-block;
     height: 16px;
@@ -621,7 +672,8 @@
     display: inline-block;
     width: 50px;
     box-sizing: border-box;
-    margin-left: 13px; }
+    margin-left: 13px;
+    float: right; }
   .sort__latch {
     display: inline-block;
     width: 0;

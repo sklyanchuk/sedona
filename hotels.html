@@ -27,7 +27,7 @@
   <main class="hotels" role="main">
     <div class="container">
       <form action="/echo" method="post" class="filter" oninput="price__from.value=slider__track.value">
-          <section class="filter__block">
+          <section class="filter__block filter__infr">
             <h3 class="filter__title">Инфраструктура:</h3>
             <input type="checkbox" class="filter__checkbox" id="pool" checked>
             <label for="pool" class="filter__label">Бассейн</label>
@@ -36,7 +36,7 @@
             <input type="checkbox" class="filter__checkbox" id="wi-fi">
             <label for="wi-fi" class="filter__label">Wi-Fi</label>
           </section>
-          <section class="filter__block">
+          <section class="filter__block filter__type">
             <h3 class="filter__title">Тип жилья:</h3>
             <input type="checkbox" class="filter__checkbox" id="type-hotel" checked>
             <label for="type-hotel" class="filter__label">Гостиница</label>

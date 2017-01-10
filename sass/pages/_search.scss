@@ -30,7 +30,16 @@
   height: 480px;
   width: 566px;
   position: absolute;
-  top: 216px;
+  @include respond-to(handhelds) {
+    top: 216px;
+  }
+  @include respond-to(medium-screens) {
+    top: 220px;
+  }
+  @include respond-to(wide-screens) {
+    top: 220px;
+  }
+
   left: 50%;
   transform: translateX(-283px);
   &__header {

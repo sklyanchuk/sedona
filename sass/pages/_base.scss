@@ -5,10 +5,10 @@
 }
 .container {
   @include respond-to(handhelds) {
-    width: 100%;
+    width: $small;
   }
   @include respond-to(medium-screens) {
-    width: $small;
+    width: $large;
   }
   @include respond-to(wide-screens) {
     width: $large;

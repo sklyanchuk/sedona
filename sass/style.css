@@ -173,10 +173,10 @@
   position: relative; }
   @media only screen and (max-width: 768px) {
     .container {
-      width: 100%; } }
+      width: 768px; } }
   @media only screen and (min-width: 769px) and (max-width: 1279px) {
     .container {
-      width: 768px; } }
+      width: 1280px; } }
   @media only screen and (min-width: 1280px) {
     .container {
       width: 1280px; } }
@@ -386,9 +386,17 @@
   height: 480px;
   width: 566px;
   position: absolute;
-  top: 216px;
   left: 50%;
   transform: translateX(-283px); }
+  @media only screen and (max-width: 768px) {
+    .search-form {
+      top: 216px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .search-form {
+      top: 220px; } }
+  @media only screen and (min-width: 1280px) {
+    .search-form {
+      top: 220px; } }
   .search-form__header {
     height: 85px;
     background-color: #766357;

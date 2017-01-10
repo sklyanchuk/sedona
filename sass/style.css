@@ -235,10 +235,8 @@
     .menu__link--logo:after {
       content: '';
       position: absolute;
-      top: 0;
-      left: 8px;
-      width: 138px;
-      height: 70px;
+      width: 100%;
+      height: 130%;
       background-image: url("../img/logo-bg.png");
       background-position: center;
       background-repeat: no-repeat;

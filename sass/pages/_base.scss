@@ -8,10 +8,10 @@
     width: $small;
   }
   @include respond-to(medium-screens) {
-    width: $large;
+    width: 1280px;
   }
   @include respond-to(wide-screens) {
-    width: $large;
+    width: 1280px;
   }
   margin-left: auto;
   margin-right: auto;

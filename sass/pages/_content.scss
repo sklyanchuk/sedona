@@ -62,8 +62,18 @@
   &__subtitle {
     @extend .centered;
     @extend .subtitle-text;
-    padding-left: 42px;
-    padding-right: 42px;
+    @include respond-to(handhelds) {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+    @include respond-to(medium-screens) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    @include respond-to(wide-screens) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -109,7 +119,15 @@
     background-color: #81b3d2;
     & .card {
       &__title {
-        padding: 45px 54px 10px 54px;
+        @include respond-to(handhelds) {
+          padding: 45px 54px 10px 54px;
+        }
+        @include respond-to(medium-screens) {
+          padding: 45px 135px 10px 135px;
+        }
+        @include respond-to(wide-screens) {
+          padding: 45px 135px 10px 135px;
+        }
       }
       &__subline {
         &:before {
@@ -125,7 +143,15 @@
     background-color: #eeeeee;
     & .card {
       &__title {
-        padding: 45px 54px 10px 54px;
+        @include respond-to(handhelds) {
+          padding: 45px 54px 10px 54px;
+        }
+        @include respond-to(medium-screens) {
+          padding: 45px 135px 10px 135px;
+        }
+        @include respond-to(wide-screens) {
+          padding: 45px 135px 10px 135px;
+        }
       }
     }
   }

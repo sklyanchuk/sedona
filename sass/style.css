@@ -172,7 +172,8 @@
     width: 100vw; } }
 @media only screen and (min-width: 1200px) {
   body {
-    width: 100vw; } }
+    width: 100vw;
+    background-color: #f2f2f2; } }
 
 .container {
   margin-left: auto;
@@ -186,7 +187,8 @@
       width: 1200px; } }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 1200px; } }
+      width: 1200px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); } }
 
 .centered, .content__title, .content__subtitle, .card__title, .card__subtitle, .card__subline, .card__img, .search-block__title, .search-block__subtitle {
   margin-left: auto;
@@ -341,7 +343,8 @@
   height: 170px;
   vertical-align: middle;
   padding-top: 40px;
-  padding-bottom: 35px; }
+  padding-bottom: 35px;
+  background-color: #fff; }
 
 .content__title {
   width: 600px;
@@ -603,10 +606,10 @@
     width: 230px; }
     @media only screen and (min-width: 769px) and (max-width: 1199px) {
       .filter__infr {
-        margin-rigth: 20px; } }
+        margin-rigth: 10px; } }
     @media only screen and (min-width: 1200px) {
       .filter__infr {
-        margin-right: 20px; } }
+        margin-right: 10px; } }
   .filter__type {
     float: left;
     width: 230px; }
@@ -641,10 +644,10 @@
         width: 220px; } }
     @media only screen and (min-width: 769px) and (max-width: 1199px) {
       .price__range {
-        width: 340px; } }
+        width: 325px; } }
     @media only screen and (min-width: 1200px) {
       .price__range {
-        width: 340px; } }
+        width: 325px; } }
   .price__elem {
     display: inline-block;
     width: 49%;

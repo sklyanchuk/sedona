@@ -26,10 +26,10 @@
     float: left;
     width: 230px;
     @include respond-to(medium-screens) {
-      margin-rigth: 20px;
+      margin-rigth: 10px;
     }
     @include respond-to(wide-screens) {
-      margin-right: 20px;
+      margin-right: 10px;
     }
   }
   &__type {
@@ -85,10 +85,10 @@
       width: 220px;
     }
     @include respond-to(medium-screens) {
-      width: 340px;
+      width: 325px;
     }
     @include respond-to(wide-screens) {
-      width: 340px;
+      width: 325px;
     }
     height: 50px;
     border: 2px solid #fff;

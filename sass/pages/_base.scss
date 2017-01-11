@@ -12,6 +12,7 @@ body {
   }
   @include respond-to(wide-screens) {
     width: 100vw;
+    background-color: #f2f2f2;
   }
 }
 .container {
@@ -23,6 +24,7 @@ body {
   }
   @include respond-to(wide-screens) {
     width: $large;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
   margin-left: auto;
   margin-right: auto;

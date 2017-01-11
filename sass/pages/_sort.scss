@@ -1,4 +1,5 @@
 .sort {
+  background-color: #fff;
   @include respond-to(handhelds) {
     padding: 30px;
   }

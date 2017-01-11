@@ -2,6 +2,7 @@
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   height: 150px;
+  background-color: #fff;
   @include respond-to(handhelds) {
     padding: 30px;
   }

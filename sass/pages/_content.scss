@@ -109,6 +109,7 @@
     }
   }
   &-type-1 {
+    background-color: #fff;
     & .card {
       &__title {
         padding: 25px;
@@ -141,7 +142,7 @@
     }
   }
   &-type-3 {
-    background-color: #eeeeee;
+    background-color: #eee;
     & .card {
       &__title {
         @include respond-to(handhelds) {

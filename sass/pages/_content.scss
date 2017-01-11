@@ -67,12 +67,12 @@
       padding-right: 42px;
     }
     @include respond-to(medium-screens) {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 60px;
+      padding-right: 60px;
     }
     @include respond-to(wide-screens) {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 60px;
+      padding-right: 60px;
     }
     margin-top: 0;
     margin-bottom: 0;
@@ -123,10 +123,10 @@
           padding: 45px 54px 10px 54px;
         }
         @include respond-to(medium-screens) {
-          padding: 45px 135px 10px 135px;
+          padding: 45px 115px 10px 115px;
         }
         @include respond-to(wide-screens) {
-          padding: 45px 135px 10px 135px;
+          padding: 45px 115px 10px 115px;
         }
       }
       &__subline {

@@ -1,0 +1,89 @@
+.intro {
+  &__image {
+    width: 100%;
+    height: 513px;
+    position: relative;
+    @include respond-to(handhelds) {
+      background-image: url(../img/intro-768.jpg);
+      background-repeat: no-repeat;
+    }
+    @include respond-to(medium-screens) {
+      background-image: url(../img/intro-1200.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 -56px;
+    }
+    @include respond-to(wide-screens) {
+      background-image: url(../img/intro-1200.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 -56px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      @include respond-to(handhelds) {
+        border-top: 30px solid transparent;
+        border-right: 220px solid #fff;
+        border-bottom: 30px solid transparent;
+        border-left: 220px solid #fff;
+        left: 50%;
+        bottom: -30px;
+        transform: translateX(-220px);
+      }
+      @include respond-to(medium-screens) {
+        border-top: 50px solid transparent;
+        border-right: 350px solid #fff;
+        border-bottom: 50px solid transparent;
+        border-left: 350px solid #fff;
+        left: 50%;
+        bottom: -50px;
+        transform: translateX(-350px);
+      }
+      @include respond-to(wide-screens) {
+        border-top: 50px solid transparent;
+        border-right: 350px solid #fff;
+        border-bottom: 50px solid transparent;
+        border-left: 350px solid #fff;
+        left: 50%;
+        bottom: -50px;
+        transform: translateX(-350px);
+      }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      @include respond-to(handhelds) {
+        border-top: 30px solid transparent;
+        border-right: 384px solid #fff;
+        border-bottom: 30px solid transparent;
+        border-left: 384px solid #fff;
+        left: 50%;
+        bottom: -30px;
+        transform: translateX(-384px);
+      }
+      @include respond-to(medium-screens) {
+        border-top: 50px solid transparent;
+        border-right: 600px solid #fff;
+        border-bottom: 50px solid transparent;
+        border-left: 600px solid #fff;
+        left: 50%;
+        bottom: -50px;
+        transform: translateX(-600px);
+      }
+      @include respond-to(wide-screens) {
+        border-top: 50px solid transparent;
+        border-right: 600px solid #fff;
+        border-bottom: 50px solid transparent;
+        border-left: 600px solid #fff;
+        left: 50%;
+        bottom: -50px;
+        transform: translateX(-600px);
+      }
+    }
+  }
+}

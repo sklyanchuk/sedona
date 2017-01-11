@@ -39,13 +39,13 @@
     &-type-1 {
       background-image: url(../img/content-1.jpg);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       background-position: center;
     }
     &-type-2 {
       background-image: url(../img/content-2.jpg);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       background-position: center;
     }
   }

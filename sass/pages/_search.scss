@@ -47,7 +47,7 @@
   @include respond-to(wide-screens) {
     top: 219px;
   }
-
+  z-index: 20;
   left: 50%;
   transform: translateX(-283px);
   &__header {

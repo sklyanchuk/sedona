@@ -164,6 +164,16 @@
   font-family: "PT Sans", sans-serif, Arial;
   font-weight: bold; }
 
+@media only screen and (max-width: 768px) {
+  body {
+    width: 768px; } }
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  body {
+    width: 100vw; } }
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 100vw; } }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -445,7 +455,9 @@
 
 .footer {
   height: 120px;
-  background-color: rgba(255, 255, 255, 0.9); }
+  width: 100%; }
+  .footer .container {
+    background-color: rgba(255, 255, 255, 0.9); }
   .footer__tag {
     font-size: 21px;
     line-height: 120px;
@@ -499,6 +511,7 @@
   height: 480px;
   width: 566px;
   position: absolute;
+  z-index: 20;
   left: 50%;
   transform: translateX(-283px); }
   @media only screen and (max-width: 768px) {

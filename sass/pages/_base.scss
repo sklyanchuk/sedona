@@ -3,6 +3,17 @@
   font-family: "PT Sans", sans-serif, Arial;
   font-weight: bold;
 }
+body {
+  @include respond-to(handhelds) {
+    width: $small;
+  }
+  @include respond-to(medium-screens) {
+    width: 100vw;
+  }
+  @include respond-to(wide-screens) {
+    width: 100vw;
+  }
+}
 .container {
   @include respond-to(handhelds) {
     width: $small;

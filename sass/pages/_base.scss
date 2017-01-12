@@ -4,14 +4,7 @@
   font-weight: bold;
 }
 body {
-  @include respond-to(handhelds) {
-    width: $small;
-  }
-  @include respond-to(medium-screens) {
-    width: 100vw;
-  }
   @include respond-to(wide-screens) {
-    width: 100vw;
     background-color: #f2f2f2;
   }
 }

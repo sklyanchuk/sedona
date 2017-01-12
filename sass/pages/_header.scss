@@ -2,7 +2,6 @@
   display: flex;
   font-weight: bold;
   font-size: 14px;
-
   min-height: 55px;
   background-color: #fff;
 
@@ -10,7 +9,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 20%;
     text-decoration: none;
     line-height: 55px;
@@ -46,4 +45,5 @@
 }
 .logo {
   z-index: 5;
+  margin: auto;
 }

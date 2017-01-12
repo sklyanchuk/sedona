@@ -481,18 +481,10 @@
   height: 480px;
   width: 566px;
   position: absolute;
+  top: 213px;
   z-index: 20;
   left: 50%;
   transform: translateX(-283px); }
-  @media only screen and (max-width: 768px) {
-    .search-form {
-      top: 216px; } }
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    .search-form {
-      top: 219px; } }
-  @media only screen and (min-width: 1200px) {
-    .search-form {
-      top: 219px; } }
   .search-form__header {
     height: 85px;
     background-color: #766357;

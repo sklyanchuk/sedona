@@ -38,15 +38,7 @@
   height: 480px;
   width: 566px;
   position: absolute;
-  @include respond-to(handhelds) {
-    top: 216px;
-  }
-  @include respond-to(medium-screens) {
-    top: 219px;
-  }
-  @include respond-to(wide-screens) {
-    top: 219px;
-  }
+  top: 213px;
   z-index: 20;
   left: 50%;
   transform: translateX(-283px);

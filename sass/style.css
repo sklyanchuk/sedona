@@ -584,7 +584,10 @@
       padding: 30px; } }
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     .filter {
-      padding: 30px 73px; } }
+      padding-left: calc((100vw / 5 - 93px) / 2);
+      padding-right: calc((100vw / 5 - 93px) / 2);
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   @media only screen and (min-width: 1200px) {
     .filter {
       padding: 30px 73px; } }
@@ -634,7 +637,7 @@
         width: 220px; } }
     @media only screen and (min-width: 769px) and (max-width: 1199px) {
       .price__range {
-        width: 325px; } }
+        width: calc(((100vw / 5) * 2) - (100vw / 5 - 83px)); } }
     @media only screen and (min-width: 1200px) {
       .price__range {
         width: 325px; } }
@@ -714,7 +717,10 @@
       padding: 30px; } }
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     .hotel {
-      padding: 30px 73px; } }
+      padding-left: calc((100vw / 5 - 93px) / 2);
+      padding-right: calc((100vw / 5 - 93px) / 2);
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   @media only screen and (min-width: 1200px) {
     .hotel {
       padding: 30px 73px; } }
@@ -776,7 +782,10 @@
       padding: 30px; } }
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     .sort {
-      padding: 30px 73px; } }
+      padding-left: calc((100vw / 5 - 93px) / 2);
+      padding-right: calc((100vw / 5 - 93px) / 2);
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   @media only screen and (min-width: 1200px) {
     .sort {
       padding: 30px 73px; } }

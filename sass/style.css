@@ -184,7 +184,7 @@
       width: 768px; } }
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     .container {
-      width: 1200px; } }
+      width: 100vw; } }
   @media only screen and (min-width: 1200px) {
     .container {
       width: 1200px;
@@ -395,8 +395,8 @@
         padding-right: 42px; } }
     @media only screen and (min-width: 769px) and (max-width: 1199px) {
       .card__subtitle {
-        padding-left: 60px;
-        padding-right: 60px; } }
+        padding-left: 50px;
+        padding-right: 50px; } }
     @media only screen and (min-width: 1200px) {
       .card__subtitle {
         padding-left: 60px;
@@ -433,30 +433,16 @@
   .card-type-2 {
     color: #fff;
     background-color: #81b3d2; }
-    @media only screen and (max-width: 768px) {
-      .card-type-2 .card__title {
-        padding: 45px 54px 10px 54px; } }
-    @media only screen and (min-width: 769px) and (max-width: 1199px) {
-      .card-type-2 .card__title {
-        padding: 45px 115px 10px 115px; } }
-    @media only screen and (min-width: 1200px) {
-      .card-type-2 .card__title {
-        padding: 45px 115px 10px 115px; } }
+    .card-type-2 .card__title {
+      padding: 45px 54px 10px 54px; }
     .card-type-2 .card__subline:before {
       background-color: #fff; }
     .card-type-2 .card__subline:after {
       background-color: #fff; }
   .card-type-3 {
     background-color: #eee; }
-    @media only screen and (max-width: 768px) {
-      .card-type-3 .card__title {
-        padding: 45px 54px 10px 54px; } }
-    @media only screen and (min-width: 769px) and (max-width: 1199px) {
-      .card-type-3 .card__title {
-        padding: 45px 135px 10px 135px; } }
-    @media only screen and (min-width: 1200px) {
-      .card-type-3 .card__title {
-        padding: 45px 135px 10px 135px; } }
+    .card-type-3 .card__title {
+      padding: 45px 54px 10px 54px; }
   .card__img {
     margin-top: 60px; }
 
@@ -672,18 +658,41 @@
       top: 13px;
       background-color: #fff; }
 
-.slider {
-  width: 220px;
-  height: 55px; }
-  .slider__slider {
+.ui-slider {
+  margin-top: 35px;
+  width: 100%;
+  height: 20px;
+  position: relative;
+  margin-left: -8px; }
+  .ui-slider::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 8px;
+    background-color: #fff;
+    opacity: 0.3; }
+  .ui-slider-range {
+    position: relative; }
+    .ui-slider-range::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      top: 10px;
+      background-color: #fff; }
+  .ui-slider-handle {
     width: 20px;
     height: 20px;
     background-color: #fff;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     display: inline-block;
-    cursor: pointer; }
-    .slider__slider::after {
+    cursor: pointer;
+    outline: none;
+    z-index: 5; }
+    .ui-slider-handle::after {
       position: absolute;
       content: "";
       top: 8px;
@@ -692,7 +701,7 @@
       height: 4px;
       border-radius: 50%;
       background-color: #ccc; }
-    .slider__slider:hover::after {
+    .ui-slider-handle:active::after {
       background-color: #1c4f80; }
 
 .hotel {

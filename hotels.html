@@ -8,6 +8,25 @@
   <link rel="stylesheet" href="sass/normalize.css" type="text/css">
   <link rel="stylesheet" href="sass/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#slider" ).slider({
+      range: true,
+      min: 0,
+      max: 4000,
+      values: [ 0, 3000 ],
+      slide: function( event, ui ) {
+        $( "#amount1" ).val( ui.values[ 0 ] );
+        $( "#amount2" ).val( ui.values[ 1 ] );
+      }
+    });
+    $( "#amount1" ).val( $( "#slider" ).slider( "values", 0 ) );
+    $( "#amount2" ).val( $( "#slider" ).slider( "values", 1 ) );
+  } );
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -26,7 +45,7 @@
   <!-- Sort hotels block -->
   <main class="hotels" role="main">
     <div class="container">
-      <form action="/echo" method="post" class="filter" oninput="price__from.value=slider__track.value">
+      <form action="/echo" method="post" class="filter" onoutput="price__from.value=slider.value">
           <section class="filter__block filter__infr">
             <h3 class="filter__title">Инфраструктура:</h3>
             <input type="checkbox" class="filter__checkbox" id="pool" checked>
@@ -48,13 +67,9 @@
           <section class="filter__block price">
             <h3 class="filter__title price__title">Стоимость в сутки (Р):</h3>
             <div class="price__range">
-              <div class="price__elem price__from">От <output name="price__from">0</output></div>
-              <div class="price__elem price__to">до <output name="price_to">3000</output></div>
-            </div>
-            <div class="slider">
-              <input type="range" class="slider__track" min="0" max="10000" step="100" value="0" name="slider__track"></input>
-              <div class="slider__slider slider__left"></div>
-              <div class="slider__slider slider__right"></div>
+              <div class="price__elem price__from">От <output id="amount1"></output></div>
+              <div class="price__elem price__to">до <output id="amount2"></output></div>
+              <div class="slider" id="slider"></div>
             </div>
           </section>
       </form>

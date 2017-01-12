@@ -68,8 +68,8 @@
       padding-right: 42px;
     }
     @include respond-to(medium-screens) {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
     @include respond-to(wide-screens) {
       padding-left: 60px;
@@ -121,15 +121,7 @@
     background-color: #81b3d2;
     & .card {
       &__title {
-        @include respond-to(handhelds) {
-          padding: 45px 54px 10px 54px;
-        }
-        @include respond-to(medium-screens) {
-          padding: 45px 115px 10px 115px;
-        }
-        @include respond-to(wide-screens) {
-          padding: 45px 115px 10px 115px;
-        }
+        padding: 45px 54px 10px 54px;
       }
       &__subline {
         &:before {
@@ -145,15 +137,7 @@
     background-color: #eee;
     & .card {
       &__title {
-        @include respond-to(handhelds) {
-          padding: 45px 54px 10px 54px;
-        }
-        @include respond-to(medium-screens) {
-          padding: 45px 135px 10px 135px;
-        }
-        @include respond-to(wide-screens) {
-          padding: 45px 135px 10px 135px;
-        }
+        padding: 45px 54px 10px 54px;
       }
     }
   }

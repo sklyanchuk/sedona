@@ -727,7 +727,8 @@ body {
     margin: 0;
     line-height: 21px; }
   .hotel__link {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #000; }
     .hotel__link:hover {
       color: #81b3d2; }
     .hotel__link:active, .hotel__link:focus {

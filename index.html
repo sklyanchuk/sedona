@@ -120,14 +120,14 @@
             <br>
 
             <label for="adults" class="search-form__label search-form__label-type-adults">Взрослые:</label>
-            <button class="btn-type-qty">-</button>
+            <button class="btn-type-qty" id="adult-minus">-</button>
             <input type="number" name="adults" id="adults" value="2" readonly min="1" max="10" class="search-form__input search-form__input-type-num">
-            <button class="btn-type-qty">+</button>
+            <button class="btn-type-qty" id="adult-plus">+</button>
 
             <label for="kids" class="search-form__label search-form__label-type-kids">Дети:</label>
-            <button class="btn-type-qty">-</button>
+            <button class="btn-type-qty" id="kid-minus">-</button>
             <input type="number" name="kids" id="kids" value="0" min="0" max="10" readonly class="search-form__input search-form__input-type-num">
-            <button class="btn-type-qty">+</button>
+            <button class="btn-type-qty" id="kid-plus">+</button>
           </div>
           <input type="submit" name="submit-search" class="btn btn-size-search search-form__submit" value="Найти">
         </div>
@@ -161,6 +161,45 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript">
+  var adultMinusButton = document.getElementById('adult-minus');
+  var adultPlusButton = document.getElementById('adult-plus');
+  var kidMinusButton = document.getElementById('kid-minus');
+  var kidPlusButton = document.getElementById('kid-plus');
+  var adults = document.getElementById('adults');
+  var kids = document.getElementById('kids');
+
+  adultMinusButton.addEventListener('click', adultMinus);
+  function adultMinus() {
+    event.preventDefault();
+    if (adults.value > 0) {
+      --adults.value;
+    }
+  }
+  adultPlusButton.addEventListener('click', adultPlus);
+  function adultPlus() {
+    event.preventDefault();
+    if (adults.value < 10) {
+      ++adults.value;
+    }
+  }
+  kidMinusButton.addEventListener('click', kidMinus);
+  function kidMinus() {
+    event.preventDefault();
+    if (kids.value > 0) {
+      --kids.value;
+    }
+  }
+  kidPlusButton.addEventListener('click', kidPlus);
+  function kidPlus() {
+    event.preventDefault();
+    if (kids.value < 10) {
+      ++kids.value;
+    }
+  }
+
+  </script>
 
 </body>
 </html>

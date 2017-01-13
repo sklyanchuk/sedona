@@ -16,9 +16,9 @@
     color: #000;
 
     &:hover {
-      color: $color-blue;
+      color: $color-blue-btn;
     }
-    &:disabled {
+    &:focus {
       color: $color-gray;
     }
 
@@ -26,6 +26,9 @@
       color: $color-brown;
       &:hover {
         color: $color-brown-hvr
+      }
+      &:focus {
+        color: #dbd8d5;
       }
     }
 

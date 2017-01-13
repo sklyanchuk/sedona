@@ -28,5 +28,24 @@
   }
   &__icon {
     margin: 10px;
+    @extend .sprite;
+    &-logo-a {
+      @extend .sprite-ico-logo-a;
+      &:hover {
+        @extend .sprite-ico-logo-a-hover;
+      }
+      &:active, &:focus {
+        @extend .sprite-ico-logo-a-down;
+      }
+    }
+    &-logo-academy {
+      @extend .sprite-ico-logo-academy;
+      &:hover {
+        @extend .sprite-ico-logo-academy-hover;
+      }
+      &:active, &:focus {
+        @extend .sprite-ico-logo-academy-down;
+      }
+    }
   }
 }

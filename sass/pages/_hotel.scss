@@ -41,6 +41,15 @@
     margin: 0;
     line-height: 21px;
   }
+  &__link {
+    text-decoration: none;
+    &:hover {
+      color: #81b3d2;
+    }
+    &:active, &:focus {
+      color: #cacaca;
+    }
+  }
   &__type, &__price {
     display: inline-block;
     vertical-align: top;

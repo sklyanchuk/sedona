@@ -49,6 +49,17 @@
     cursor: pointer;
     margin-right: -4px;
     margin-left: -4px;
+    &:hover {
+      color: #000;
+    }
+    &:active {
+      color: #81b3d2;
+    }
+    &--disabled {
+      &:hover {
+        color: #a9a9a9;
+      }
+    }
   }
 
   &-size-search {
